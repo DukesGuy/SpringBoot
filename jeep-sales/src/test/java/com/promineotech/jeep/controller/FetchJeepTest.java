@@ -1,8 +1,10 @@
 package com.promineotech.jeep.controller;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
+import java.math.BigDecimal;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -50,6 +52,35 @@ class FetchJeepTest {
 		
 		// Then: the response status is 200 (OK)
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+		
+		// And: the returned Jeep objects are what I expected
+		assertThat(response.getBody()).isEqualTo(buildExpected());
+		
+	}
+
+	private List<Jeep> buildExpected() {
+		List<Jeep> jeeps = new LinkedList<Jeep>();
+		
+		// @formatter:off
+		jeeps.add(Jeep.builder()
+				.model(JeepModel.WRANGLER)
+				.trimLevel("Sport")
+				.numDoors(2)
+				.wheelSize(17)
+				.basePrice(new BigDecimal("28475.00"))
+				.build());
+		
+		jeeps.add(Jeep.builder()
+				.model(JeepModel.WRANGLER)
+				.trimLevel("Sport")
+				.numDoors(4)
+				.wheelSize(17)
+				.basePrice(new BigDecimal("31975.00"))
+				.build());
+		// @formatter:on
+		
+		return jeeps;
+		
 	}
 
 }
