@@ -38,7 +38,7 @@
       <optional>true</optional>
     </dependency>
     
-    <!-- Bean Validation =========================================================== -->
+    <!-- Bean Validation dependency ================================================ -->
     
     <dependency>
       <groupId>org.springframework.boot</groupId>

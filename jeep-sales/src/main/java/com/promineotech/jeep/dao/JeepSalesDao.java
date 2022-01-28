@@ -8,7 +8,6 @@ import com.promineotech.jeep.entity.JeepModel;
 
 public interface JeepSalesDao {
 	
-	
 	List<Jeep> fetchJeeps(JeepModel model, String trim);
 
 }
