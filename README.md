@@ -1,5 +1,5 @@
 # Jeep Sales
-Spring Boot project for Promineo Tech
+Project worked on during Spring Boot portion of Back End Web Development Bootcamp for Promineo Tech
 
 ## OpenApi Documentation
 ![alt text](https://i.ibb.co/kyHthLP/Screen-Shot-2022-02-16-at-5-21-47-PM.png)
