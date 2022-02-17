@@ -2,6 +2,7 @@
 Project worked on during Spring Boot portion of Back End Web Development Bootcamp for Promineo Tech
 
 ## Topics Covered
+* REST
 * Spring Annotations
 * MySQL Database Connectivity
 * J-Unit Testing / Mockito
@@ -10,7 +11,7 @@ Project worked on during Spring Boot portion of Back End Web Development Bootcam
 * Maven
 * Entity Relationship Diagrams
 * JDBC
-* Slf4j
+* log4j
 
 ## OpenApi Documentation
 ![alt text](https://i.ibb.co/kyHthLP/Screen-Shot-2022-02-16-at-5-21-47-PM.png)
